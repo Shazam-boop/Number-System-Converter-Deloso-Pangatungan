@@ -47,19 +47,6 @@
 
         let fromBase = parseInt(document.getElementById("fromBase").value);
         let toBase = parseInt(document.getElementById("toBase").value);
-
-        if (fromBase === 2) {
-        alert("Binary numbers can only contain 0 and 1.");
-    } 
-    else if (fromBase === 8) {
-        alert("Octal numbers can only contain digits from 0 to 7.");
-    } 
-    else if (fromBase === 10) {
-        alert("Decimal numbers can only contain digits from 0 to 9.");
-    } 
-    else if (fromBase === 16) {
-        alert("Hexadecimal numbers can contain digits 0-9 and letters A-F.");
-    }
             
         if (input === "") {
             document.getElementById("result").innerText = "Please enter a number.";
@@ -72,6 +59,7 @@
         return;
         }
         let convertedValue = decimalValue.toString(toBase).toUpperCase();
+            
 
         document.getElementById("result").innerText = "Result: " + convertedValue;
     }
@@ -80,3 +68,4 @@
 </body>
 
 </html>
+
